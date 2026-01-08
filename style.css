@@ -36,14 +36,17 @@
 
   .coming {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .container {
-    width: 580px;
+    width: 100%;
+    max-width: 580px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -53,6 +56,8 @@
     margin-top: 40px;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .header {
@@ -117,14 +122,15 @@
 .main-links-divs {
     background-color: #141414;
     width: 85%;
+    min-width: 280px;
     height: 80px;
     cursor: pointer;
     border-radius: 25px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    padding-left: 20px;
-    gap: 150px;
+    padding: 0 20px;
+    gap: 15px;
 }
 
 .main-links-divs:hover {
@@ -137,15 +143,10 @@
 
 .main-links-divs a {
     font-size: larger;
+    text-align: center;
+    flex: 0 0 auto;
 }
 
-#tiktok {
-   gap: 165px;
-}
-
-#facebook {
-    gap: 155px;
-}
 
 footer {
     margin-top: 70px;
@@ -165,4 +166,201 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design - Tablet */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    #profile-pic {
+        width: 90px;
+        height: 90px;
+    }
+
+    #profile-pic img {
+        width: 90px;
+        height: 90px;
+    }
+
+    #icon-links {
+        width: 50%;
+    }
+
+    #icon-links a {
+        font-size: 28px;
+    }
+
+    .main-links-divs {
+        width: 90%;
+        height: 70px;
+        padding: 0 18px;
+    }
+
+    .main-links-divs i {
+        font-size: 30px;
+    }
+
+    .main-links-divs a {
+        font-size: medium;
+        text-align: center;
+        flex: 0 0 auto;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+}
+
+/* Responsive Design - Mobile */
+@media screen and (max-width: 480px) {
+    .container {
+        margin-top: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        padding: 15px 10px;
+    }
+
+    .header {
+        min-height: 80px;
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: medium;
+        text-align: center;
+    }
+
+    .header p {
+        font-size: small;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    #profile-pic {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 8px;
+    }
+
+    #profile-pic img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #icon-links {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    #icon-links a {
+        font-size: 24px;
+    }
+
+    .main-links {
+        margin-top: 20px;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .main-links-divs {
+        width: 95%;
+        min-width: 250px;
+        height: 65px;
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .main-links-divs i {
+        font-size: 26px;
+    }
+
+    .main-links-divs a {
+        font-size: small;
+        flex: 0 0 auto;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    footer p {
+        font-size: small;
+        text-align: center;
+    }
+
+    footer a {
+        font-size: small;
+        text-align: center;
+    }
+}
+
+/* Responsive Design - Small Mobile */
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 10px 5px;
+    }
+
+    h1 {
+        font-size: small;
+    }
+
+    #profile-pic {
+        width: 70px;
+        height: 70px;
+    }
+
+    #profile-pic img {
+        width: 70px;
+        height: 70px;
+    }
+
+    #icon-links {
+        width: 70%;
+    }
+
+    #icon-links a {
+        font-size: 22px;
+    }
+
+    .main-links-divs {
+        width: 98%;
+        min-width: 200px;
+        height: 60px;
+        padding: 0 12px;
+        gap: 10px;
+    }
+
+    .main-links-divs i {
+        font-size: 22px;
+    }
+
+    .main-links-divs a {
+        font-size: x-small;
+        text-align: center;
+        flex: 0 0 auto;
+    }
+}
+
+/* Responsive Design - Large Screens */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 600px;
+    }
 }
