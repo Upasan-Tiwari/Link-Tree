@@ -1,0 +1,168 @@
+.epilogue-regular {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  * {
+    font-family: "Epilogue", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1b1b1b;
+    color: #fff;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-size: xx-large;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .coming {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 580px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin-top: 40px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.header {
+    width: 100%;
+    min-height: 100px;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+#profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.links {
+    background: transparent;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icon-links {
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    width: 40%;
+}
+
+#icon-links a {
+    font-size: 30px;
+    cursor: pointer;
+    transition: ease-in-out;
+}
+
+#icon-links a:hover {
+    scale: 1.05;
+}
+
+.main-links {
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent;
+    gap: 20px;
+}
+
+.main-links-divs {
+    background-color: #141414;
+    width: 85%;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+    gap: 150px;
+}
+
+.main-links-divs:hover {
+    background-color: #1b1b1b;
+}
+
+.main-links-divs i {
+    font-size: 35px;
+}
+
+.main-links-divs a {
+    font-size: larger;
+}
+
+#tiktok {
+   gap: 165px;
+}
+
+#facebook {
+    gap: 155px;
+}
+
+footer {
+    margin-top: 70px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    gap: 10px;
+}
+
+footer a {
+    color: aqua;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
